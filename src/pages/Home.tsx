@@ -46,30 +46,30 @@ function Home() {
           </li>
 
           <li>
-            <a href="/about">
+            <Link to="/about">
               <span className="t">About</span>
               <span className="d">
                 Background, education and music
               </span>
-            </a>
+            </Link>
           </li>
 
           <li>
-            <a href="/tools">
+            <Link to="/tools">
               <span className="t">Tools</span>
               <span className="d">
                 Languages, frameworks and services I use
               </span>
-            </a>
+            </Link>
           </li>
 
           <li>
-            <a href="/contact">
+            <Link to="/contact">
               <span className="t">Contact</span>
               <span className="d">
                 Email, GitHub, LinkedIn and CV
               </span>
-            </a>
+            </Link>
           </li>
         </ul>
       </main>
