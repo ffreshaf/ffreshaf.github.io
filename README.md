@@ -1,75 +1,119 @@
-# React + TypeScript + Vite
+# Guilherme Oliveira Linhares — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal portfolio showcasing my projects, technical skills, education and contact information.
 
-Currently, two official plugins are available:
+**Live website:** https://ffreshaf.github.io
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## About
 
-## React Compiler
+This portfolio presents my background as an Informatics and Computing Engineering graduate from FEUP, along with:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Featured and university projects
+- Technical tools and technologies
+- Education and professional interests
+- Music and astronomy interests
+- Contact details and downloadable CV
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- React 19
+- TypeScript
+- React Router
+- Vite
+- CSS
+- GitHub Actions
+- GitHub Pages
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Pages
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- `/` — Landing page
+- `/projects` — Featured and academic projects
+- `/about` — Background, education and interests
+- `/tools` — Languages, frameworks and technologies
+- `/contact` — Email, social profiles and CV
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Project Structure
 
+```text
+src/
+├── components/
+│   ├── Footer.tsx
+│   ├── Navbar.tsx
+│   └── PageLayout.tsx
+├── pages/
+│   ├── Home.tsx
+│   ├── Projects.tsx
+│   ├── About.tsx
+│   ├── Tools.tsx
+│   └── Contact.tsx
+├── App.tsx
+├── main.tsx
+└── index.css
+
+public/
+├── GuilhermeLinhares_CV.pdf
+├── favicon.svg
+├── icons.svg
+└── photo-1.jpg
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+## Running Locally
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Requirements
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- Node.js 22 or later
+- npm
 
+### Installation
+
+```bash
+git clone https://github.com/ffreshaf/ffreshaf.github.io.git
+cd ffreshaf.github.io
+npm ci
 ```
+
+### Development
+
+```bash
+npm run dev
+```
+
+Vite will start a local development server, usually at `http://localhost:5173`.
+
+### Build
+
+```bash
+npm run build
+```
+
+The production files will be generated in `dist/`.
+
+### Preview the Build
+
+```bash
+npm run preview
+```
+
+### Lint
+
+```bash
+npm run lint
+```
+
+## Deployment
+
+The site is automatically deployed to GitHub Pages through `.github/workflows/deploy.yml`.
+
+Every push to `main`:
+
+1. Checks out the repository
+2. Installs dependencies with `npm ci`
+3. Builds the application
+4. Uploads the `dist` directory
+5. Deploys it through GitHub Pages
+
+## Contact
+
+- Email: [guilherme-linhares@sapo.pt](mailto:guilherme-linhares@sapo.pt)
+- GitHub: [@ffreshaf](https://github.com/ffreshaf)
+- LinkedIn: [Guilherme Linhares](https://www.linkedin.com/in/guilherme-linhares-3a06a3393/)
