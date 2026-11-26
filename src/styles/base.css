@@ -2,6 +2,7 @@
 
 * {
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
 }
 
 html {
@@ -17,24 +18,25 @@ body {
   line-height: 1.6;
 }
 
-html,
-body {
-  overflow-x: hidden;
-}
-
-a,
-button {
-  -webkit-tap-highlight-color: transparent;
-  touch-action: manipulation;
-}
-
 a {
   color: inherit;
+}
+
+a, button {
+  touch-action: manipulation;
 }
 
 a:focus-visible {
   outline: 3px solid var(--accent);
   outline-offset: 4px;
+}
+
+.index a,
+.bar nav a,
+.footer-links a {
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -45,10 +47,3 @@ a:focus-visible {
     transition-duration: 0.01ms !important;
   }
 }
-
-.index a:active .t,
-.bar nav a:active,
-.footer-links a:active {
-  color: var(--accent);
-}
-
