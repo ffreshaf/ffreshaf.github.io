@@ -1,7 +1,13 @@
+import type { ReactNode } from "react"
 import Navbar from "./Navbar"
 import Footer from "./Footer"
 
-function PageLayout({ title, children }) {
+interface PageLayoutProps {
+  title: string
+  children: ReactNode
+}
+
+function PageLayout({ title, children }: PageLayoutProps) {
   return (
     <>
       <Navbar />
