@@ -17,6 +17,17 @@ body {
   line-height: 1.6;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
+a,
+button {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
 a {
   color: inherit;
 }
@@ -34,3 +45,10 @@ a:focus-visible {
     transition-duration: 0.01ms !important;
   }
 }
+
+.index a:active .t,
+.bar nav a:active,
+.footer-links a:active {
+  color: var(--accent);
+}
+
