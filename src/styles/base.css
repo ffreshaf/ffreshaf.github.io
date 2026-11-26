@@ -24,40 +24,11 @@ a {
 
 a, button {
   touch-action: manipulation;
-  transition: transform 0.2s ease, opacity 0.2s ease, color 0.2s ease;
 }
-
-.bar nav a,
-.footer-links a,
-.bar .home {
-  display: inline-block;
-}
-
-a:active, button:active {
-  transition: none; 
-  transform: scale(0.96);
-  opacity: 0.55;
-}
-
-
 
 a:focus-visible {
   outline: 3px solid var(--accent);
   outline-offset: 4px;
-}
-
-.index a:active .t,
-.bar nav a:active,
-.footer-links a:active {
-  color: var(--accent);
-}
-
-.index a,
-.bar nav a,
-.footer-links a {
-  -webkit-user-select: none;
-  user-select: none;
-  -webkit-touch-callout: none;
 }
 
 @media (prefers-reduced-motion: reduce) {
