@@ -4,7 +4,7 @@ function Navbar() {
   return (
     <header className="bar">
       <Link to="/" className="home">
-        <img src="/photo-placeholder.svg" alt="" />
+        <img src="/photo-2.jpg" alt="" />
         <span>Guilherme Linhares</span>
       </Link>
 

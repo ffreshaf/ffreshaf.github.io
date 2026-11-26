@@ -30,7 +30,7 @@ function Projects() {
 
           <div className="actions">
             <a href="https://github.com/ffreshaf/By-Flora">
-              GitHub ↗
+              GitHub
             </a>
           </div>
         </div>
@@ -67,7 +67,7 @@ function Projects() {
 
             <div className="actions">
               <a href="https://github.com/Duarte-Pombo/Financial-App">
-                GitHub ↗
+                GitHub
               </a>
             </div>
           </div>
@@ -95,7 +95,7 @@ function Projects() {
 
             <div className="actions">
               <a href="https://github.com/LEIC-ES-2024-25/2LEIC11T4">
-                GitHub ↗
+                GitHub
               </a>
             </div>
           </div>

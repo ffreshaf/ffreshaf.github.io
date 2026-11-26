@@ -4,33 +4,33 @@ function Home() {
   return (
     <div className="landing">
       <header className="identity">
-        <figure className="photo">
-          <img
-            src="/photo.jpg"
-            alt="Portrait of Guilherme Linhares"
-            width={400}
-            height={400}
-            onError={(e) => {
-              e.currentTarget.onerror = null
-              e.currentTarget.src = "/photo-placeholder.svg"
-            }}
-          />
-        </figure>
+        <div className="photo-gallery" aria-label="A collection of portraits">
+          <figure className="photo-card photo-left">
+            <img
+              src="/photo-1.jpg"
+              alt="Guilherme Oliveira Linhares"
+            />
+          </figure>
+
+          <figure className="photo-card photo-center">
+            <img
+              src="/photo-2.jpg"
+              alt="Guilherme Oliveira Linhares"
+            />
+          </figure>
+
+          <figure className="photo-card photo-right">
+            <img
+              src="/photo-3.jpg"
+              alt="Guilherme Oliveira Linhares"
+            />
+          </figure>
+        </div>
 
         <div className="intro">
           <h1 className="name">
             Guilherme Oliveira Linhares
           </h1>
-
-          <p className="lede">
-            Frontend developer in Porto. I build interfaces
-            people can use without a tutorial.
-          </p>
-
-          <p className="sub">
-            Informatics and Computing Engineering graduate
-            from FEUP, looking for my first professional role.
-          </p>
         </div>
       </header>
 
