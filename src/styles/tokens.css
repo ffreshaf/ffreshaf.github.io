@@ -1,0 +1,16 @@
+/* Design tokens: the only place colours, fonts and widths are defined. */
+
+:root {
+  --paper: #FAF9F5;
+  --ink: #292B26;
+  --muted: #777A70;
+  --line: #E7E8DF;
+
+  --accent: #84977D;
+  --accent-hover: #687D62;
+
+  --display: "Manrope", "Helvetica Neue", Arial, sans-serif;
+  --body: "DM Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --page-width: min(100% - 3rem, 70rem);
+}

@@ -44,7 +44,7 @@ function Projects() {
             <span className="project-number">02</span>
             <h2>Awared</h2>
             <p className="context">
-              Artificial Intelligence · FEUP · 2026
+              Team Project · FEUP · 2026
             </p>
           </div>
 
@@ -58,7 +58,7 @@ function Projects() {
             </p>
 
             <p className="tech">
-              Artificial Intelligence · Personal Finance
+              Insights · Personal Finance 
             </p>
 
             <p className="context">
@@ -78,7 +78,7 @@ function Projects() {
             <span className="project-number">03</span>
             <h2>BookExchange</h2>
             <p className="context">
-              University project · FEUP · 2025
+              Software Engineering · FEUP · 2025
             </p>
           </div>
 
@@ -106,7 +106,7 @@ function Projects() {
             <span className="project-number">04</span>
             <h2>UBOOK</h2>
             <p className="context">
-              University project · FEUP · 2025
+              Laboratory of Databases and Web Applications · FEUP · 2025
             </p>
           </div>
 

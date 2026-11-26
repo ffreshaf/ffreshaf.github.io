@@ -1,0 +1,26 @@
+/* Long-form text. Used by the About and Contact pages. */
+
+.prose {
+  max-width: 48rem;
+}
+
+.prose > p {
+  margin: 0 0 1.5rem;
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.85;
+}
+
+.prose h2 {
+  margin: 3.5rem 0 1.5rem;
+  font-family: var(--display);
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: -0.035em;
+}
+
+@media (max-width: 40rem) {
+  .prose h2 {
+    margin-top: 2.75rem;
+  }
+}

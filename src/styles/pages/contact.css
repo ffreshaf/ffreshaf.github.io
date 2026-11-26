@@ -1,0 +1,35 @@
+.contact-email {
+  display: inline-block;
+  color: var(--accent);
+  font-family: var(--display);
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 180ms ease;
+}
+
+.contact-email:hover {
+  color: var(--accent-hover);
+}
+
+.contact-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin: 2rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contact-list a {
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 0.25rem;
+  transition: color 180ms ease, border-color 180ms ease;
+}
+
+.contact-list a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}

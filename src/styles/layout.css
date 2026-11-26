@@ -1,0 +1,38 @@
+/* Page structure shared by every inner page. */
+
+.wrap {
+  width: var(--page-width);
+  margin-inline: auto;
+}
+
+/* Keeps the footer at the bottom of the window on short pages. */
+.page-shell {
+  min-height: 100vh;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-shell > .page-content {
+  flex: 1 0 auto;
+}
+
+.page-content {
+  padding-block: 4rem 6rem;
+}
+
+h1.page {
+  margin: 0 0 3rem;
+
+  font-family: var(--display);
+  font-size: clamp(2.75rem, 7vw, 4.5rem);
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  line-height: 1;
+}
+
+@media (max-width: 40rem) {
+  .page-content {
+    padding-block: 3rem 4rem;
+  }
+}

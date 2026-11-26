@@ -1,0 +1,63 @@
+/* Top bar on inner pages. */
+
+.bar {
+  width: var(--page-width);
+  margin-inline: auto;
+  padding-block: 1.25rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+
+  border-bottom: 1px solid var(--line);
+}
+
+.bar .home {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.bar .home img {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.bar nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.bar nav a {
+  text-decoration: none;
+  color: var(--muted);
+  transition: color 180ms ease;
+}
+
+.bar nav a:hover {
+  color: var(--accent);
+}
+
+@media (max-width: 40rem) {
+  .bar {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .bar nav {
+    gap: 0.5rem 1rem;
+  }
+}

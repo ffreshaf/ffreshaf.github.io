@@ -1,0 +1,48 @@
+.prose > .about-intro {
+  color: var(--ink);
+  font-family: var(--display);
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.55;
+  letter-spacing: -0.02em;
+}
+
+.about-entry {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+
+  padding-block: 1.25rem;
+  border-top: 1px solid var(--line);
+}
+
+.about-entry strong {
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.about-entry p {
+  margin: 0.4rem 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.about-date {
+  flex-shrink: 0;
+  color: var(--accent);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+@media (max-width: 40rem) {
+  .prose > .about-intro {
+    font-size: 1.2rem;
+  }
+
+  .about-entry {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

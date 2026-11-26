@@ -9,7 +9,7 @@ interface PageLayoutProps {
 
 function PageLayout({ title, children }: PageLayoutProps) {
   return (
-    <>
+    <div className="page-shell">
       <Navbar />
 
       <main className="wrap page-content">
@@ -18,7 +18,7 @@ function PageLayout({ title, children }: PageLayoutProps) {
       </main>
 
       <Footer />
-    </>
+    </div>
   )
 }
 

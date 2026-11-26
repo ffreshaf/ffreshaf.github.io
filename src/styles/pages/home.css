@@ -1,0 +1,115 @@
+/* Landing page: identity on the left, site index on the right. */
+
+.landing {
+  width: var(--page-width);
+  min-height: 100svh;
+  margin-inline: auto;
+
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  align-items: center;
+
+  gap: 5rem;
+  padding-block: 5rem;
+}
+
+.identity {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.name {
+  margin: 0;
+
+  font-family: var(--display);
+  font-weight: 700;
+  font-size: clamp(3.5rem, 6.5vw, 6.5rem);
+  line-height: 0.98;
+  letter-spacing: -0.045em;
+
+  max-width: 10ch;
+}
+
+.navigation {
+  min-width: 0;
+  padding: 0;
+}
+
+.index {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: none;
+}
+
+.index a {
+  display: grid;
+  gap: 0.2rem;
+
+  padding: 1.5rem 0;
+  border: none;
+  text-decoration: none;
+
+  transition: padding-left 180ms ease;
+}
+
+.index .t {
+  font-family: var(--display);
+  font-size: 1.75rem;
+  font-weight: 650;
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+
+  transition: color 180ms ease;
+}
+
+.index .d {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.index a:hover {
+  padding-left: 0.5rem;
+}
+
+.index a:hover .t {
+  color: var(--accent);
+}
+
+@media (max-width: 48rem) {
+  .landing {
+    width: min(100% - 2.5rem, 38rem);
+    min-height: auto;
+
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+
+    padding-block: 4rem;
+  }
+
+  .identity {
+    gap: 1.75rem;
+  }
+
+  .name {
+    font-size: clamp(3rem, 11vw, 4.5rem);
+  }
+
+  .index a {
+    padding-block: 1.2rem;
+  }
+}
+
+@media (max-width: 24rem) {
+  .landing {
+    width: calc(100% - 2rem);
+    padding-block: 3rem;
+  }
+
+  .name {
+    font-size: 2.8rem;
+  }
+}
