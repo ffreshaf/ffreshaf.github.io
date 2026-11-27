@@ -87,14 +87,6 @@ function About() {
           with a second project.
         </p>
 
-        <p>
-          I'm also interested in physics and astronomy.
-          In 2023, I participated in the International
-          Astronomical Search Collaboration, analysing
-          Pan-STARRS images to contribute to near-Earth
-          object and asteroid observations.
-        </p>
-
         <h2>A Little More</h2>
 
         <p>
