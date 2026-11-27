@@ -1,20 +1,14 @@
-import type { ReactNode } from "react"
+import { Outlet } from "react-router-dom"
 import Navbar from "./Navbar"
 import Footer from "./Footer"
 
-interface PageLayoutProps {
-  title: string
-  children: ReactNode
-}
-
-function PageLayout({ title, children }: PageLayoutProps) {
+function PageLayout() {
   return (
     <div className="page-shell">
       <Navbar />
 
       <main className="wrap page-content">
-        <h1 className="page">{title}</h1>
-        {children}
+        <Outlet />
       </main>
 
       <Footer />

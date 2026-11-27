@@ -1,8 +1,8 @@
-import PageLayout from "../components/PageLayout"
 
 function Tools() {
   return (
-    <PageLayout title="Tools">
+    <>
+      <h1 className="page-title">Tools</h1>
       <div className="stack">
 
         <section className="stack-group">
@@ -51,7 +51,7 @@ function Tools() {
         </section>
 
       </div>
-    </PageLayout>
+    </>
   )
 }
 

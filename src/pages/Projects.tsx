@@ -1,9 +1,8 @@
-import PageLayout from "../components/PageLayout"
 
 function Projects() {
   return (
-    <PageLayout title="Projects">
-
+    <>
+      <h1 className="page-title">Projects</h1>
       {/* Featured project */}
       <article className="project featured">
         <div className="project-info">
@@ -179,7 +178,7 @@ function Projects() {
 
       </div>
 
-    </PageLayout>
+    </>
   )
 }
 

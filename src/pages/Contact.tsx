@@ -1,8 +1,8 @@
-import PageLayout from "../components/PageLayout"
 
 function Contact() {
   return (
-    <PageLayout title="Contact">
+    <>
+      <h1 className="page-title">Contact</h1>
       <div className="prose contact">
         <p>
           I'm based in Porto and available to start immediately.
@@ -54,7 +54,7 @@ function Contact() {
           </li>
         </ul>
       </div>
-    </PageLayout>
+    </>
   )
 }
 

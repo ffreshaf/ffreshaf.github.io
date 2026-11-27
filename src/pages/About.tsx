@@ -1,8 +1,8 @@
-import PageLayout from "../components/PageLayout"
 
 function About() {
   return (
-    <PageLayout title="About">
+    <>
+      <h1 className="page-title">About</h1>
       <div className="prose">
 
         <p className="about-intro">
@@ -105,7 +105,7 @@ function About() {
         </p>
 
       </div>
-    </PageLayout>
+    </>
   )
 }
 
